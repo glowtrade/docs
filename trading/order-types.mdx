@@ -1,0 +1,40 @@
+---
+title: Order Types
+description: "Available order types for perpetual futures trading."
+---
+
+## Market Order
+
+Executes immediately at the best available price. Use when you want instant entry or exit.
+
+- **Pros**: Guaranteed execution
+- **Cons**: May experience slippage in low-liquidity markets
+
+## Limit Order
+
+Executes only at your specified price or better. Use when you want price precision.
+
+- **Pros**: No slippage, you control the price
+- **Cons**: May not fill if the market doesn't reach your price
+
+## Stop Loss
+
+Automatically closes your position when the price hits a specified level, limiting your downside.
+
+- Set below the current price for long positions
+- Set above the current price for short positions
+
+## Take Profit
+
+Automatically closes your position when the price hits your target, locking in gains.
+
+- Set above the current price for long positions
+- Set below the current price for short positions
+
+## TP/SL Combo
+
+Set both Take Profit and Stop Loss simultaneously when opening a position for full risk management.
+
+<Warning>
+  Stop Loss and Take Profit orders are triggered by the **mark price**, not the last traded price. This prevents manipulation via low-volume trades.
+</Warning>

@@ -1,0 +1,39 @@
+---
+title: API Overview
+description: "Programmatic access to Glo Exchange trading and market data."
+---
+
+## Overview
+
+Glo Exchange provides REST APIs for programmatic trading, account management, and market data access.
+
+## Base URLs
+
+| Environment | URL |
+|------------|-----|
+| Production | `https://api.glo.exchange` |
+
+## Authentication
+
+Most API endpoints require authentication via JWT bearer token. See the [Authentication](/api-reference/authentication) page for details.
+
+## Rate Limits
+
+| Endpoint Type | Rate Limit |
+|--------------|------------|
+| Authenticated | 100 requests / 15 min |
+| Public data | 300 requests / 15 min |
+
+## API Categories
+
+<CardGroup cols={2}>
+  <Card title="Authentication" icon="lock" href="/api-reference/authentication">
+    JWT-based auth for secure API access.
+  </Card>
+  <Card title="Trading" icon="chart-line" href="/api-reference/trading">
+    Place orders, manage positions, and check balances.
+  </Card>
+  <Card title="Market Data" icon="database" href="/api-reference/market-data">
+    Real-time prices, orderbook data, and trade history.
+  </Card>
+</CardGroup>

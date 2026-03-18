@@ -1,0 +1,42 @@
+---
+title: Fees
+description: "Trading fee structure on Glo Exchange."
+---
+
+## Fee Structure
+
+Glo Exchange charges trading fees on each executed trade. Fees are deducted from your USDC margin balance.
+
+| Fee Type | Rate |
+|----------|------|
+| **Taker** (market orders) | 0.035% |
+| **Maker** (limit orders) | 0.01% |
+| **Builder Fee** | Included in taker fee |
+
+<Info>
+  Maker orders that add liquidity to the orderbook receive a lower fee rate. Limit orders that fill immediately (cross the spread) are charged taker fees.
+</Info>
+
+## Fee Examples
+
+| Trade Size | Taker Fee | Maker Fee |
+|-----------|-----------|-----------|
+| $1,000 | $0.35 | $0.10 |
+| $10,000 | $3.50 | $1.00 |
+| $100,000 | $35.00 | $10.00 |
+
+## Funding Rate
+
+Funding rates are exchanged between long and short position holders every **8 hours**. The rate varies by asset and market conditions.
+
+- **Positive funding**: Longs pay shorts
+- **Negative funding**: Shorts pay longs
+
+Current funding rates are displayed on each asset's trading page.
+
+## No Hidden Fees
+
+- No deposit fees (gas fees apply for bridging)
+- No withdrawal fees (Hyperliquid network fees apply)
+- No account maintenance fees
+- No inactivity fees

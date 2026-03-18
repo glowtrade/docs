@@ -1,0 +1,42 @@
+---
+title: How Trading Works
+description: "Understand the mechanics of perpetual futures trading on Glo Exchange."
+---
+
+## Perpetual Futures
+
+Glo Exchange offers **perpetual futures** (perps) — derivative contracts that let you speculate on an asset's price without owning the underlying asset. Unlike traditional futures, perps have no expiry date.
+
+### Key Concepts
+
+<AccordionGroup>
+  <Accordion title="Long vs Short">
+    - **Long**: You profit when the price goes up. Open a long if you're bullish.
+    - **Short**: You profit when the price goes down. Open a short if you're bearish.
+  </Accordion>
+  <Accordion title="Leverage">
+    Leverage amplifies your position size relative to your margin. With 10x leverage and $100 margin, you control a $1,000 position. Higher leverage means higher potential profit *and* higher risk of liquidation.
+  </Accordion>
+  <Accordion title="Margin">
+    Margin is the collateral you deposit to open a position. All positions on Glo Exchange are margined in **USDC**.
+  </Accordion>
+  <Accordion title="Funding Rate">
+    Perpetual futures use a **funding rate** mechanism to keep the contract price aligned with the spot price. When the perp trades above spot, longs pay shorts. When below spot, shorts pay longs. Funding is exchanged every 8 hours.
+  </Accordion>
+  <Accordion title="Liquidation">
+    If the market moves against your position and your margin ratio falls below the maintenance margin, your position will be **liquidated**. Use stop-losses and appropriate leverage to manage this risk.
+  </Accordion>
+</AccordionGroup>
+
+## Order Flow
+
+When you place a trade on Glo Exchange:
+
+1. Your order is signed by your embedded wallet (via Privy)
+2. The order is submitted to Hyperliquid's on-chain orderbook
+3. Hyperliquid's matching engine fills your order against existing liquidity
+4. Your position is reflected on-chain and in your dashboard
+
+<Info>
+  All trades are settled on Hyperliquid's L1 blockchain. Glo Exchange never holds custody of your funds.
+</Info>

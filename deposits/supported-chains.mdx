@@ -1,0 +1,25 @@
+---
+title: Supported Chains
+description: "Networks supported for depositing funds to Glo Exchange."
+---
+
+## Supported Networks
+
+| Chain | Token | Status |
+|-------|-------|--------|
+| Arbitrum One | USDC | Supported |
+| Ethereum | USDC | Supported (auto-bridged via LI.FI) |
+
+## How Bridging Works
+
+When you deposit USDC from a supported network:
+
+1. You send USDC to your assigned deposit address
+2. Glo Exchange detects the incoming transaction
+3. Funds are automatically bridged to Hyperliquid via [LI.FI](https://li.fi) cross-chain aggregator
+4. USDC is transferred from your spot account to your perp account on Hyperliquid
+5. Your trading balance updates and you're ready to trade
+
+<Warning>
+  Only send **USDC** to your deposit address. Sending other tokens may result in permanent loss of funds.
+</Warning>

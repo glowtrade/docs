@@ -1,0 +1,34 @@
+---
+title: Trading API
+description: "Place orders and manage positions via the API."
+---
+
+## Endpoints
+
+### Place Order
+
+```
+POST /api/agent/exchange/order
+```
+
+Place a market or limit order on Hyperliquid via the exchange proxy.
+
+### Get Open Positions
+
+```
+GET /api/user/positions
+```
+
+Returns all open positions for the authenticated user.
+
+### Get Order History
+
+```
+GET /api/user/orders
+```
+
+Returns the order history for the authenticated user.
+
+<Info>
+  All trading operations are executed on Hyperliquid's L1. The API acts as a proxy that signs and submits orders on behalf of the user via their embedded wallet.
+</Info>

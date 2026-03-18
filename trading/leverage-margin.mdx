@@ -1,0 +1,49 @@
+---
+title: Leverage & Margin
+description: "How leverage and margin work on Glo Exchange."
+---
+
+## Leverage
+
+Leverage allows you to open positions larger than your available margin. Glo Exchange supports up to **50x leverage** on major assets.
+
+| Asset Class | Max Leverage |
+|------------|-------------|
+| BTC, ETH | 50x |
+| Major Crypto (SOL, XRP, etc.) | 20x |
+| Stocks | 20x |
+| Indices | 20x |
+| Commodities | 20x |
+| Forex | 20x |
+
+<Warning>
+  Higher leverage increases both potential gains and potential losses. A 50x leveraged position can be liquidated by a 2% adverse price move.
+</Warning>
+
+## Margin Types
+
+### Cross Margin
+Your entire account balance is used as collateral for all open positions. This provides more buffer against liquidation but puts your full balance at risk.
+
+### Isolated Margin
+Each position has its own dedicated margin. If liquidated, only the margin allocated to that position is lost. Other positions and your remaining balance are unaffected.
+
+## Liquidation
+
+A position is liquidated when its margin ratio falls below the **maintenance margin requirement**.
+
+### Liquidation Price
+
+Your liquidation price is displayed when opening a position and on your positions panel. It depends on:
+
+- **Entry price**
+- **Leverage used**
+- **Position size**
+- **Maintenance margin rate**
+
+### Avoiding Liquidation
+
+- Use lower leverage (5x–10x recommended for beginners)
+- Always set stop-loss orders
+- Monitor your positions regularly
+- Add margin to positions approaching liquidation
