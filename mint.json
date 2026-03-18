@@ -11,11 +11,7 @@
   "colors": {
     "primary": "#7C3AED",
     "light": "#A78BFA",
-    "dark": "#5B21B6",
-    "anchors": {
-      "from": "#7C3AED",
-      "to": "#5B21B6"
-    }
+    "dark": "#5B21B6"
   },
   "topbarLinks": [
     {
@@ -27,81 +23,63 @@
     "name": "Launch App",
     "url": "https://glo.exchange"
   },
-  "anchors": [
-    {
-      "name": "API Reference",
-      "icon": "code",
-      "url": "api-reference"
-    },
-    {
-      "name": "Community",
-      "icon": "discord",
-      "url": "https://discord.gg/gloexchange"
-    }
-  ],
-  "navigation": [
-    {
-      "group": "Getting Started",
-      "pages": [
-        "introduction",
-        "quickstart",
-        "supported-assets"
-      ]
-    },
-    {
-      "group": "Trading",
-      "pages": [
-        "trading/how-it-works",
-        "trading/order-types",
-        "trading/fees",
-        "trading/leverage-margin"
-      ]
-    },
-    {
-      "group": "Assets",
-      "pages": [
-        "assets/crypto",
-        "assets/stocks",
-        "assets/indices",
-        "assets/commodities-forex"
-      ]
-    },
-    {
-      "group": "Deposits & Withdrawals",
-      "pages": [
-        "deposits/overview",
-        "deposits/supported-chains",
-        "deposits/korean-cex-onramp"
-      ]
-    },
-    {
-      "group": "Referral Program",
-      "pages": [
-        "referral/overview",
-        "referral/how-it-works",
-        "referral/rewards"
-      ]
-    },
-    {
-      "group": "API Reference",
-      "pages": [
-        "api-reference/overview",
-        "api-reference/authentication",
-        "api-reference/trading",
-        "api-reference/market-data"
-      ]
-    }
-  ],
+  "navigation": {
+    "groups": [
+      {
+        "group": "Getting Started",
+        "pages": [
+          "introduction",
+          "quickstart",
+          "supported-assets"
+        ]
+      },
+      {
+        "group": "Trading",
+        "pages": [
+          "trading/how-it-works",
+          "trading/order-types",
+          "trading/fees",
+          "trading/leverage-margin"
+        ]
+      },
+      {
+        "group": "Assets",
+        "pages": [
+          "assets/crypto",
+          "assets/stocks",
+          "assets/indices",
+          "assets/commodities-forex"
+        ]
+      },
+      {
+        "group": "Deposits & Withdrawals",
+        "pages": [
+          "deposits/overview",
+          "deposits/supported-chains",
+          "deposits/korean-cex-onramp"
+        ]
+      },
+      {
+        "group": "Referral Program",
+        "pages": [
+          "referral/overview",
+          "referral/how-it-works",
+          "referral/rewards"
+        ]
+      },
+      {
+        "group": "API Reference",
+        "pages": [
+          "api-reference/overview",
+          "api-reference/authentication",
+          "api-reference/trading",
+          "api-reference/market-data"
+        ]
+      }
+    ]
+  },
   "footerSocials": {
     "x": "https://x.com/gloexchange",
     "discord": "https://discord.gg/gloexchange"
-  },
-  "seo": {
-    "indexHiddenPages": false
-  },
-  "analytics": {
-    "ga4": {
-      "measurementId": ""
-    }
   }
 }
